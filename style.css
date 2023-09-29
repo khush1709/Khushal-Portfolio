@@ -1,0 +1,144 @@
+/* Import the default Tailwind CSS styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Color Palette https://colorhunt.co/palette/3546496c7a89a3c6c4e0e7e9*/
+
+/* Set global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0E7E9;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #354649;
+    color: #E0E7E9;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure the navigation bar is on top of other content */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #E0E7E9;
+    text-decoration: none;
+}
+
+/* Style the navigation bar links */
+.nav-link {
+    color: #E0E7E9;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    background-color: #E0E7E9;
+    color: #354649; /* Change the text color on hover */
+    text-emphasis: bold;
+}
+
+/* Style sections */
+section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem; /* Adjust margin to move sections slightly to the right */
+    transition: none;
+}
+
+/* Style the "Home" section */
+#home {
+    text-align: center;
+    padding: 2rem;
+     /* Add a background color for contrast */
+}
+
+/* Style the profile photo */
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #354649; /* Add a border for emphasis */
+}
+
+/* Style the text in the "Home" section */
+#home p, #home h1 {
+    margin: 1rem 0;
+    color: #354649; /* Adjust text color for readability */
+}
+
+/* Style the "Welcome" text */
+#home p {
+    font-size: 18px;
+}
+
+/* Style the name */
+#home h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Style the welcome message */
+#home p:last-child {
+    font-size: 16px;
+}
+
+/* Style project cards */
+.project, .experience, .certificate, .education{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #A3C6C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project img, .certificate img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #354649;
+    color: #E0E7E9;
+}
+
+/* Style social media links */
+.social-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-links a {
+    margin-right: 1rem;
+}
+
+.social-links img {
+    width: 24px; /* Adjust the size of social media icons */
+    height: 24px;
+    border-radius: 50%;
+}
